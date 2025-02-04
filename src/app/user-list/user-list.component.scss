@@ -1,0 +1,77 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.add-user {
+  margin-bottom: 30px;
+  padding: 20px;
+  background: #f5f5f5;
+  border-radius: 8px;
+}
+
+input {
+  margin-right: 10px;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+button {
+  padding: 8px 16px;
+  background: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+  &:hover {
+    background: #45a049;
+  }
+
+  &.delete {
+    background: #f44336;
+
+    &:hover {
+      background: #da190b;
+    }
+  }
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  margin-bottom: 10px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.status {
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 0.8em;
+  margin-left: 10px;
+
+  &.active {
+    background: #e8f5e9;
+    color: #2e7d32;
+  }
+
+  &.inactive {
+    background: #ffebee;
+    color: #c62828;
+  }
+}
+
+.actions button {
+  margin-left: 10px;
+}
