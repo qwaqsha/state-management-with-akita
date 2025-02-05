@@ -3,8 +3,8 @@
   
   <div class="add-user">
     <h3>Add New User</h3>
-    <input #nameInput placeholder="Name" />
-    <input #emailInput placeholder="Email" />
+    <input #nameInput placeholder="Enter name..." />
+    <input #emailInput placeholder="Enter email..." />
     <button (click)="addUser(nameInput.value, emailInput.value); nameInput.value = ''; emailInput.value = ''">
       Add User
     </button>
@@ -15,7 +15,8 @@
     <ul>
       <li *ngFor="let user of users$ | async">
         <span class="user-info">
-          {{ user.name }} ({{ user.email }})
+          <strong>{{ user.name }}</strong>
+          <span>({{ user.email }})</span>
           <span [class]="user.isActive ? 'status active' : 'status inactive'">
             {{ user.isActive ? 'Active' : 'Inactive' }}
           </span>

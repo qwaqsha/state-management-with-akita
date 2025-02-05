@@ -1,13 +1,10 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { UserQuery } from '../state/user.query';
 import { UserService } from '../state/user.service';
 import { User } from '../models/user.model';
 
 @Component({
   selector: 'app-user-list',
-  // standalone: true,
-  // imports: [CommonModule],
   templateUrl: './user-list.component.html',
   styleUrls: ['./user-list.component.scss']
 })
