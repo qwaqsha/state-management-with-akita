@@ -6,8 +6,8 @@ import { User } from '../models/user.model';
 
 @Component({
   selector: 'app-user-list',
-  standalone: true,
-  imports: [CommonModule],
+  // standalone: true,
+  // imports: [CommonModule],
   templateUrl: './user-list.component.html',
   styleUrls: ['./user-list.component.scss']
 })
@@ -17,18 +17,18 @@ export class UserListComponent {
   constructor(
     private userQuery: UserQuery,
     private userService: UserService
-  ) {}
+  ) { }
 
   addUser(name: string, email: string) {
     if (!name || !email) return;
-    
+
     const user: User = {
       id: Date.now().toString(),
       name,
       email,
       isActive: true
     };
-    
+
     this.userService.addUser(user);
   }
 
