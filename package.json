@@ -18,7 +18,7 @@
     "@angular/router": "^18.1.0",
     "@datorama/akita": "^8.0.1",
     "rxjs": "^7.8.1",
-    "tslib": "^2.5.0",
+    "tslib": "^2.4.1",
     "zone.js": "~0.14.0"
   },
   "devDependencies": {
